@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vedant Potdar | Full Stack Developer</title>
+  <meta name="description" content="Vedant Potdar, Full Stack Developer building multi-tenant SaaS products with React.js, React Native, Node.js and PostgreSQL." />
+  <meta property="og:title" content="Vedant Potdar | Full Stack Developer" />
+  <meta property="og:description" content="React.js · React Native · Node.js · PostgreSQL. Building web and mobile products that ship." />
+  <meta name="theme-color" content="#0b0d17" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0d17'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-size='30' font-weight='700' fill='%2322d3ee'%3EVP%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-name">
+      <span>V</span><span>E</span><span>D</span><span>A</span><span>N</span><span>T</span>
+    </div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo" aria-label="Home"><span class="logo-bracket">&lt;</span>VP<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch colour theme">
+        <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-small magnetic" href="assets/Vedant_Potdar_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal"><span class="pulse"></span> Open to exciting opportunities</p>
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Vedant Potdar</span>
+          </h1>
+          <p class="hero-role reveal">
+            I build <span class="typed" id="typed" aria-live="polite"></span><span class="caret" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-sub reveal">
+            Full Stack Developer shipping enterprise-grade, multi-tenant SaaS products across web and mobile,
+            from React interfaces and React Native apps to Node.js APIs and PostgreSQL.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#work" class="btn btn-primary magnetic">See my work</a>
+            <a href="#contact" class="btn btn-ghost magnetic">Let's talk</a>
+          </div>
+          <ul class="hero-socials reveal" aria-label="Profiles">
+            <li><a href="https://github.com/Vedpotdar" data-link="github" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/vedant-potdar-860760289/" data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a></li>
+            <li><a href="mailto:vedantpotdar170@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal tilt" aria-hidden="true">
+          <div class="window-bar"><i></i><i></i><i></i><span>developer.js</span></div>
+<pre class="code"><code><span class="k">const</span> <span class="v">developer</span> = {
+  <span class="p">name</span>: <span class="s">'Vedant Potdar'</span>,
+  <span class="p">role</span>: <span class="s">'Full Stack Developer'</span>,
+  <span class="p">stack</span>: [<span class="s">'React'</span>, <span class="s">'React Native'</span>,
+          <span class="s">'Node.js'</span>, <span class="s">'PostgreSQL'</span>],
+  <span class="p">shipping</span>: [<span class="s">'Web'</span>, <span class="s">'Android'</span>, <span class="s">'iOS'</span>],
+  <span class="p">coffee</span>: <span class="n">Infinity</span>,
+  <span class="f">build</span>(<span class="v">idea</span>) {
+    <span class="k">return</span> <span class="v">idea</span>.<span class="f">toProduct</span>();
+  }
+};</code></pre>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-tag reveal">01 · About</p>
+          <h2 class="section-title reveal">Turning business workflows into <span class="gradient-text">products people use daily</span></h2>
+          <p class="lead reveal">
+            I work across the full stack of a live workplace-management platform used on the web, Google Play and the App Store.
+            I've contributed to visitor management, HRMS &amp; payroll, conference and hot-desk booking, and car parking,
+            and I'm the sole developer of the HRMS mobile app.
+          </p>
+          <p class="reveal">
+            I like owning a feature end to end: the database schema, the API, the screen and the release.
+            Lately that has also meant hardening products for security reviews and tuning mobile releases for the Play Store.
+          </p>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat-num" data-count="5" data-suffix="+">0</span><span class="stat-label">product modules</span></div>
+            <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">platforms shipped</span></div>
+            <div class="stat"><span class="stat-num" data-count="2" data-suffix="+">0</span><span class="stat-label">years building</span></div>
+          </div>
+        </div>
+
+        <div class="terminal reveal" aria-label="About me, terminal style">
+          <div class="window-bar"><i></i><i></i><i></i><span>~/vedant</span></div>
+          <div class="terminal-body" id="terminal"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>React.js</span><span>React Native</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>Redis</span><span>AWS</span><span>Azure</span><span>Microsoft Graph</span><span>Twilio</span><span>JWT</span><span>OAuth 2.0</span><span>Expo</span>
+          <span>React.js</span><span>React Native</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>Redis</span><span>AWS</span><span>Azure</span><span>Microsoft Graph</span><span>Twilio</span><span>JWT</span><span>OAuth 2.0</span><span>Expo</span>
+        </div>
+      </div>
+      <div class="container">
+        <p class="section-tag reveal">02 · Skills</p>
+        <h2 class="section-title reveal">The toolbox</h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal tilt">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Frontend</h3>
+            <ul class="chips"><li>React.js</li><li>React Native</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>TailwindCSS</li></ul>
+          </article>
+          <article class="skill-card reveal tilt">
+            <div class="skill-icon">{ }</div>
+            <h3>Backend</h3>
+            <ul class="chips"><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>Cron jobs</li></ul>
+          </article>
+          <article class="skill-card reveal tilt">
+            <div class="skill-icon">[db]</div>
+            <h3>Database</h3>
+            <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>Prisma ORM</li><li>Redis</li></ul>
+          </article>
+          <article class="skill-card reveal tilt">
+            <div class="skill-icon">&#9729;</div>
+            <h3>Cloud</h3>
+            <ul class="chips"><li>AWS EC2</li><li>AWS S3</li><li>AWS IAM</li><li>Azure Blob Storage</li></ul>
+          </article>
+          <article class="skill-card reveal tilt">
+            <div class="skill-icon">&#128273;</div>
+            <h3>Auth &amp; APIs</h3>
+            <ul class="chips"><li>JWT</li><li>OAuth 2.0</li><li>Microsoft Graph API</li><li>Twilio WhatsApp API</li></ul>
+          </article>
+          <article class="skill-card reveal tilt">
+            <div class="skill-icon">&gt;_</div>
+            <h3>Tools</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>Postman</li><li>VS Code</li><li>Expo / EAS</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-tag reveal">03 · Experience</p>
+        <h2 class="section-title reveal">Where I've been building</h2>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Associate Software Developer</h3>
+                  <p class="tl-company">Enterlyze Pvt. Ltd.</p>
+                </div>
+                <span class="tl-date">Sep 2026 – Present</span>
+              </div>
+              <p>Building and maintaining Enterlyze, a live workplace-management platform on the web, Google Play and the App Store.</p>
+              <ul class="tl-points">
+                <li>Visitor Management: self check-in flows, visitor lifecycle, WhatsApp OTP and the React Native check-in app.</li>
+                <li>HRMS &amp; Payroll: attendance, leave, payroll, PMS, LMS and talent acquisition; sole developer of the HRMS mobile app.</li>
+                <li>Conference, Hot Desk &amp; Car Parking: booking workflows, availability, and Microsoft Teams meetings via Graph API.</li>
+                <li>Security hardening and release quality across modules: server-side validation, safe email rendering, tighter CORS, and optimised Android release builds.</li>
+              </ul>
+              <ul class="chips small"><li>React.js</li><li>React Native</li><li>Node.js</li><li>PostgreSQL</li><li>Redis</li><li>Azure</li></ul>
+              <div class="work-links tl-live">
+                <span>Live on</span>
+                <a href="https://play.google.com/store/apps/details?id=com.infocloudic.visitormanagement" data-link="playstore" target="_blank" rel="noopener">Google Play ↗</a>
+                <a href="https://apps.apple.com/us/app/enterlyze/id6751401008" data-link="appstore" target="_blank" rel="noopener">App Store ↗</a>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Associate Software Developer</h3>
+                  <p class="tl-company">Infocloud IT Services Pvt. Ltd.</p>
+                </div>
+                <span class="tl-date">Dec 2025 – Aug 2026</span>
+              </div>
+              <p>Worked on the Enterlyze platform modules (VMS, HRMS &amp; Payroll, Conference Booking, Hot Desk) before moving to Enterlyze Pvt. Ltd.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Software Developer Intern</h3>
+                  <p class="tl-company">Infocloud IT Services Pvt. Ltd.</p>
+                </div>
+                <span class="tl-date">Jun 2025 – Dec 2025</span>
+              </div>
+              <p>Started on the Enterlyze product team, shipping features across the web and mobile apps.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3>Software Developer Intern</h3>
+                  <p class="tl-company">P-Webcraft Technology</p>
+                </div>
+                <span class="tl-date">Jul 2024 – Dec 2024</span>
+              </div>
+              <p>Built frontend UI components and integrated REST APIs into client-facing web applications during a 6-month internship.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="section-tag reveal">04 · Work</p>
+        <h2 class="section-title reveal">Things I've built</h2>
+        <div class="filters reveal" role="tablist" aria-label="Filter work">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="filter" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+          <button class="filter" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card reveal tilt featured" data-tags="web mobile backend">
+            <div class="work-art art-vms" aria-hidden="true"><span>VMS</span></div>
+            <div class="work-body">
+              <p class="work-kicker">Enterlyze · Featured</p>
+              <h3>Visitor Management System</h3>
+              <p>Visitor self check-in on web and mobile, with WhatsApp OTP verification, photo capture, host notifications and an admin dashboard. The check-in app is live on Google Play and the App Store.</p>
+              <ul class="chips small"><li>React.js</li><li>React Native</li><li>Node.js</li><li>Twilio</li><li>Azure Blob</li></ul>
+              <div class="work-links">
+                <a href="https://play.google.com/store/apps/details?id=com.infocloudic.visitormanagement" data-link="playstore" target="_blank" rel="noopener">Google Play ↗</a>
+                <a href="https://apps.apple.com/us/app/enterlyze/id6751401008" data-link="appstore" target="_blank" rel="noopener">App Store ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-tags="mobile">
+            <div class="work-art art-hrms" aria-hidden="true"><span>HRMS</span></div>
+            <div class="work-body">
+              <p class="work-kicker">Enterlyze · Sole developer</p>
+              <h3>HRMS Mobile App</h3>
+              <p>Built the complete React Native HRMS app: home screen, attendance with location and face check-in, leave, and employee self-service.</p>
+              <ul class="chips small"><li>React Native</li><li>Expo</li><li>JWT</li></ul>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-tags="web backend">
+            <div class="work-art art-booking" aria-hidden="true"><span>BOOK</span></div>
+            <div class="work-body">
+              <p class="work-kicker">Enterlyze</p>
+              <h3>Conference &amp; Hot Desk Booking</h3>
+              <p>Room and desk booking with floor plans, availability, conflict checks and Microsoft Teams meetings created through OAuth 2.0 and the Graph API.</p>
+              <ul class="chips small"><li>React.js</li><li>Node.js</li><li>PostgreSQL</li><li>Graph API</li></ul>
+              <div class="work-links"><a href="https://trial.enterlyze.com/conference-employee" target="_blank" rel="noopener">Live demo ↗</a></div>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-tags="web backend">
+            <div class="work-art art-park" aria-hidden="true"><span>P</span></div>
+            <div class="work-body">
+              <p class="work-kicker">Enterlyze</p>
+              <h3>Car Parking</h3>
+              <p>Developed the parking module: spots, bookings, employee access and an admin console.</p>
+              <ul class="chips small"><li>React.js</li><li>Node.js</li><li>PostgreSQL</li></ul>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-tags="backend">
+            <div class="work-art art-shield" aria-hidden="true"><span>SEC</span></div>
+            <div class="work-body">
+              <p class="work-kicker">Enterlyze · Platform</p>
+              <h3>Security Hardening</h3>
+              <p>Closed findings from an external security assessment across several modules: server-side input validation, HTML-safe email templates, origin allowlists and sanitised error responses, verified on production.</p>
+              <ul class="chips small"><li>Node.js</li><li>Express</li><li>OWASP</li></ul>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-tags="web">
+            <div class="work-art art-dsv" aria-hidden="true"><span>DSV</span></div>
+            <div class="work-body">
+              <p class="work-kicker">Personal project</p>
+              <h3>Data Structures Visualizer</h3>
+              <p>Learn data structures and algorithms by watching them run: sorting, searching, stacks, queues, linked lists and trees, animated step by step.</p>
+              <ul class="chips small"><li>React.js</li><li>D3.js</li><li>TailwindCSS</li></ul>
+              <div class="work-links">
+                <a href="https://github.com/Vedpotdar/ds-visualizer" data-link="dsv-github" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="https://ds-visualizer-pink.vercel.app" data-link="dsv-demo" target="_blank" rel="noopener">Live demo ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-tight" id="education">
+      <div class="container">
+        <p class="section-tag reveal">05 · Education</p>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <span class="edu-year">2022 – 2025</span>
+            <h3>B.E. in Computer Engineering</h3>
+            <p>YTCEM, University of Mumbai</p>
+          </div>
+          <div class="edu-card reveal">
+            <span class="edu-year">2019 – 2022</span>
+            <h3>Diploma in Computer Engineering</h3>
+            <p>ICARE, MSBTE · 77.03%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <p class="section-tag reveal">06 · Contact</p>
+        <h2 class="contact-title reveal">Have an idea?<br /><span class="gradient-text">Let's build it.</span></h2>
+        <p class="lead reveal">I'm always happy to talk about new roles, freelance work or interesting products.</p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-large magnetic" href="mailto:vedantpotdar170@gmail.com">Say hello</a>
+          <button class="btn btn-ghost btn-large magnetic" id="copyEmail" data-email="vedantpotdar170@gmail.com">
+            <span class="copy-label">Copy email</span>
+          </button>
+        </div>
+        <p class="contact-meta reveal">vedantpotdar170@gmail.com · +91 95450 99800 · <a class="contact-link" href="https://www.linkedin.com/in/vedant-potdar-860760289/" data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by Vedant Potdar · <span id="year"></span></p>
+      <a href="#home" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
