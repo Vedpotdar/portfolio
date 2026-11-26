@@ -125,9 +125,8 @@
       });
       await sleep(450);
     }
-    const last = document.createElement('div');
-    last.innerHTML = '<span class="prompt">➜</span> <span class="term-caret"></span>';
-    term.appendChild(last);
+    // features.js turns the terminal into a live prompt from here.
+    document.dispatchEvent(new Event('terminal:ready'));
   }
 
   /* ---------- Particle network (hero) ---------- */
